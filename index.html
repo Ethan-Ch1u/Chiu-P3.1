@@ -39,18 +39,18 @@
 	        <div class="col-md-6" v-for="movie in movies">
 	            <div class="thumbnail">
 
-						<img class="poster img-fluid" />
-						<div class="imageInfo">{{movie.posterindex}}</div>
+						<img class="poster img-fluid" @click="poserCLick(movie)" :src="movie.posters[mpvie.posterindex]">
+						<div class="imageInfo">{{movie[i].posterindex}}</div>
 
-						<p class="title">{{movie.title}} ({{movie.country}})</p>
-						<p class="score"><i class="bi bi-star" aria-hidden="true"></i> {{movie.iscore}} </p>
-						<p class="runtime">Runtime: {{movie.runtime}}</p>
-						<p class="released">Released: {{movie.released}} | Rated: {{movie.rating}}</p>
+						<p class="title">{{movie[i].title}} ({{movie.country}})</p>
+						<p class="score"><i class="bi bi-star" aria-hidden="true"></i> {{movie[i].iscore}} </p>
+						<p class="runtime">Runtime: {{movie[i].runtime}}</p>
+						<p class="released">Released: {{movie[i].released}} | Rated: {{movie[i].rating}}</p>
 						<p class="websites">Websites: <a :href="movie.imdb"> imdb </a> | <a :href="movie.webste">website</a></p>
 
 			            <div class="social">
-			              <p class="likes"><i class="bi bi-hand-thumbs-up" aria-hidden="true"></i> {{movie.likes}}</p>
-			              <p class="dislikes"><i class="bi bi-hand-thumbs-down"></i> {{movie.dislikes}}</p>
+			              <p class="likes"><i class="bi bi-hand-thumbs-up" aria-hidden="true"></i> {{movie[i].likes}}</p>
+			              <p class="dislikes"><i class="bi bi-hand-thumbs-down"></i> {{movie[i].dislikes}}</p>
 			            </div>
 	            </div>
 	        </div>
