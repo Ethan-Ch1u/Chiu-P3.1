@@ -45,50 +45,63 @@ const vue_app = Vue.createApp({
     },
       methods: {
             /* ADD FUNCTIONS/METHODS FOR STEP 7 HERE */
-            getMonthText(dataArray){
-                  let month = '';
-                  switch(dataArray[1]){
-                        case 1:
-                              month = 'January';
-                              break;
-                         case 2:
-                              month = 'Febusry';
-                              break;
-                         case 3:
-                              month = 'March';
-                              break;
-                         case 4:
-                              month = 'April';
-                              break;
-                         case 5:
-                              month = 'May';
-                              break;
-                         case 6:
-                              month = 'June';
-                              break;
-                         case 7:
-                              month = 'July';
-                              break;
-                         case 8:
-                              month = 'August';
-                              break;
-                         case 9:
-                              month = 'September';
-                              break;
-                         case 10:
-                              month = 'October';
-                              break;
-                         case 11:
-                              month = 'November';
-                              break;
-                         case 12:
-                              month = 'December';
-                              break; 
-                  }
-                  return month + ", " + dataArray[2] + ', ' + dataArray[1]
-            }
-      }
-})
+            posterClick(movie){
+               movie.posterindex++;
+               if (movie.posterindex > movie.posters.length - 1) {
+                   movie.posterindex = 0;
+               }  
+           },
+           timeText(minutes) {
+   var hours = Math.floor(minutes / 60);
+   var minutes = minutes % 60;
+   return hours + ' hours, ' + minutes + ' minutes';           
+             },
+getMonthText(dataArray){
+   let month = '';
+   switch(dataArray[1]){
+         case 1:
+                     month = 'January';
+                     break;
+         case 2:
+                     month = 'February';
+                     break;
+         case 3:
+                     month = 'March';
+                     break;
+         case 4:
+                     month = 'April';
+                     break;
+         case 5:
+                     month = 'May';
+                     break;
+         case 6:
+                     month = 'June';
+                     break;
+         case 7:
+                     month = 'July';
+                     break;
+         case 8:
+                     month = 'August';
+                     break;
+         case 9:
+                     month = 'September';
+                     break;
+         case 10:
+                     month = 'October';
+                     break;
+         case 11:
+                     month = 'November';
+                     break;
+         case 12:
+                     month = 'December';
+                     break;
+   }
+   return month + ", " + dataArray[2] + ", " + dataArray[0]
+}
 
+}
+
+
+})
 
 vue_app.mount("#vue_app")
