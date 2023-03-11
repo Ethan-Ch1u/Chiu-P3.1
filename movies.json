@@ -68,5 +68,47 @@
             "likes": 812,
             "dislikes": 101,
             "posterindex": 0
+      }, 
+      {
+            "title": "Avatar The Way of Water",
+            "iscore": 7.8,
+            "rating": "PG-13",
+            "runtime": 192,
+            "released": [2022, 12, 16],
+            "country": "USA",
+            "posters": ["img/avatar1.jpg", "img/avatar2.jpg"],
+            "imdb": "https://www.imdb.com/title/tt1630029/?ref_=nv_sr_srsg_2",
+            "website": "https://www.avatar.com/movies/avatar-the-way-of-water",
+            "likes": 861,
+            "dislikes": 579,
+            "posterindex": 0
+      },  
+      {
+            "title": "Creed 3",
+            "iscore": 7.3,
+            "rating": "PG-13",
+            "runtime": 117,
+            "released": [2022, 3, 3],
+            "country": "USA",
+            "posters": ["img/Creed1.jpg", "img/creed2.jpg"],
+            "imdb": "https://www.imdb.com/title/tt11145118/?ref_=nv_sr_srsg_0",
+            "website": "https://www.creedmovie.net/",
+            "likes": 887,
+            "dislikes": 781,
+            "posterindex": 0
+      },
+      {
+            "title": "Bullet Train",
+            "iscore": 7.3,
+            "rating": "PG-13",
+            "runtime": 127,
+            "released": [2008, 7, 18],
+            "country": "USA",
+            "posters": ["img/bt1.jpg", "img/bt2.jpg"],
+            "imdb": "https://www.imdb.com/title/tt12593682/?ref_=nv_sr_srsg_0",
+            "website": "https://www.sonypictures.com/movies/bullettrain",
+            "likes": 783,
+            "dislikes": 562,
+            "posterindex": 0
       }
 ]
